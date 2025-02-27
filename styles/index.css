@@ -1,5 +1,6 @@
 /* CUSTOM FONT FAMILY == SPACE-GROTESK */
 @font-face {
+<<<<<<< HEAD
   font-family: "font";
   src: url("/starter-code/assets/fonts/space-grotesk-font/SpaceGrotesk-VariableFont_wght.ttf");
 }
@@ -28,10 +29,39 @@ html {
 body {
   background-color: #fff;
   height: 100vh;
+=======
+    font-family: "font";
+    src: url("/starter-code/assets/fonts/space-grotesk-font/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+/* EVERYTHING */
+*{
+    font-family: "font";
+    max-width: 1440px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* line-height: 1.2; */
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/* HTML DOC */
+html{
+    overflow-x: hidden;
+}
+
+/* BODY TAG */
+body{
+    background-color: #fff;
+    height: 100vh;
+>>>>>>> a96d46d093330fce6638f809b0c4cf6dcf835931
 }
 
 /* REUSABLES */
 /* VARIABLES */
+<<<<<<< HEAD
 :root {
   --very-dark-blue: #1b1d23;
   --dark-grey: #60636d;
@@ -443,6 +473,400 @@ div.section_five_num {
 
 /* .footer .proj_btn{
 } */
+=======
+:root{
+    --very-dark-blue: #1B1D23;
+    --dark-grey: #60636D;
+    --medium-grey: #7D828F;
+    --light-grey:  #C8CCD8;
+    --very-light-grey: #EEEFF4;
+    --red-errors: #DF5656;
+}
+
+/* DOCUMENT MARGIN */
+.mlmr{
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    color: var(--very-light-grey);
+    text-transform: capitalize;
+    gap: 20px;
+    padding: 18px 36px;
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+    text-wrap: nowrap;
+}
+
+.btn img{
+    width: 20px;
+}
+
+button:hover{
+    background-color: var(--medium-grey);
+    color: var(--light-grey);
+    cursor: pointer;
+}
+
+
+/* TOP LEFT "FANCY" CONTAINER */
+.top-left{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fancy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 98px;
+}
+
+.line{
+    width: 2px;
+    height: 75px;
+    background-color: var(--light-grey);
+}
+
+.text-home{
+    color: var(--light-grey);
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    transform: rotate(90deg);
+}
+
+.num_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 705px;
+    left: 68px;
+    z-index: 1000;
+}
+
+.num_row .active{
+    background-color: var(--very-dark-blue);
+    color: var(--very-light-grey);
+}
+
+.num_row>button{
+    border-color: transparent;
+    padding: 18px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* TOP RIGHT "EVERYTHING" CONTAINER */
+.header{
+    /* margin: 0 8rem 40px 8rem; */
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+}
+
+.logo img{
+    width: 85px;
+}
+
+.link-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.link-list a{
+    color: var(--medium-grey);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.4s ease-in-out;
+}
+
+.link-list a:hover{
+    color: var(--very-dark-blue);
+}
+
+.menu img{
+    width: 20px;
+    display: none;
+}
+
+/* PROJECT CONTENTS */
+.project_section{
+    /* position: relative; */
+    margin-bottom: 6rem;
+}
+
+.proj_img{
+    position: relative;
+    /* margin: 0 8rem 40px 8rem; */
+    margin-top: 0;
+    margin-bottom: 40px;
+    background-image: url("/starter-code/assets/home/desktop/image-hero-paramour.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #b7b7ff;
+    background-blend-mode: multiply;
+    padding: 150px;
+}
+
+.proj_content{
+    max-width: 180px;
+}
+
+.proj_text{
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+
+.proj_text h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--very-light-grey);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.proj_text p{
+    font-weight: 500;
+    color: var(--very-light-grey);
+    width: 450px;
+    line-height: 1.6;
+}
+
+/* SECTION TWO */
+.section_two{
+    /* margin: 0 8rem 80px 8rem; */
+    margin-top: 0;
+    margin-bottom: 80px;
+    padding: 0;
+    position: relative;
+}
+
+.big_welcome h1{
+    position: absolute;
+    margin-top: -5rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 13.5rem;
+    color: var(--very-light-grey);
+    z-index: 1;
+    text-align: left;
+}
+
+.para{
+    display: flex;
+    gap: 80px;
+}
+
+.para_left{
+    margin-left: 10.6rem;
+    margin-top: 8rem;
+    width: 800px;
+}
+
+.para_left_heading, .para_left_text{
+    text-align: left;
+}
+
+.para_left_heading{
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 3.4rem;
+    z-index: 100;
+    margin-bottom: 4rem;
+}
+
+.para_left_text{
+    margin-top: 10.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.para_left_text p{
+    color: var(--medium-grey);
+    font-weight: 500;
+}
+
+.text_left_para{
+    display: block;
+}
+
+.para_right img{
+    margin-top: 3.6rem;
+    width: 330px;
+}
+
+/* SECTION THREE */
+.section_three{
+    margin-top: 12rem;
+}
+
+.section_three_img{
+    /* margin: 0 8rem 160px 8rem; */
+    margin-top: 0;
+    margin-bottom: 160px;
+    background-image: url("/starter-code/assets/home/desktop/image-small-team.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #b7b7ff;
+    background-blend-mode: multiply;
+    padding: 150px;
+}
+
+.proj_text h1{
+    width: 580px;
+}
+
+/* SECTION FOUR */
+.section_four{
+    /* margin: 0 8rem 80px 8rem; */
+    margin-top: 0;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_four h4{
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+/* SECTION FIVE */
+.section_five{
+    /* margin: 0 8rem 80px 8rem; */
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.section_five_img{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+
+div.five_img{
+    position: relative;
+    height: 550px;
+    width: 385px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #8cb5b8d5;
+    background-blend-mode: multiply;
+    z-index: 1000;
+}
+
+.img_one{
+    background-image: url("/starter-code/assets/portfolio/desktop/image-del-sol.jpg");
+}
+
+.img_two{
+    background-image: url("/starter-code/assets/portfolio/desktop/image-228b.jpg");
+}
+
+.img_three{
+    background-image: url("/starter-code/assets/portfolio/desktop/image-prototype.jpg");
+}
+
+div.section_five_num{
+    position: absolute;
+    top: -30px;
+    font-size: 18rem;
+    font-weight: 800;
+    color: var(--light-grey);
+}
+
+.one_num{
+    right: -18px;
+}
+
+.two_num{
+    right: -14px;
+}
+
+.three_num{
+    right: -18px;
+}
+
+.section_five_text{
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin-left: 2rem;
+    margin-top: 29rem;
+    color: var(--very-light-grey);
+}
+
+.section_five_heading{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.section_five_info{
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* FOOTER */
+.footer{
+    /* margin: 0 8rem; */
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_light{
+    background-color: var(--very-dark-blue);
+    flex: 1;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_gray_header{
+    background-color: var(--light-grey);
+}
+
+.bg_grey{
+    flex-basis: 20px;
+}
+
+
+
+>>>>>>> a96d46d093330fce6638f809b0c4cf6dcf835931
 /* .bg_grey{
     display: flex;
     justify-content: flex-start;
@@ -469,6 +893,7 @@ div.section_five_num {
     z-index: 1000;
 } */
 
+<<<<<<< HEAD
 #container {
   max-width: 1200px;
 }
@@ -487,3 +912,24 @@ div.section_five_num {
     background-color: green;
   }
 }
+=======
+#container{
+    max-width: 1200px;
+}
+
+
+/* RESPONSIVENESS MEDIA QUERIES */
+/* tablet portrait - no num_row,no para_right image */
+@media (min-width: 768px) and (max-width: 1023px){
+    *{
+        background-color: red;
+    }
+}
+
+/* mobile portrait */
+@media (max-width: 767px){
+    *{
+        background-color: green;
+    }
+}
+>>>>>>> a96d46d093330fce6638f809b0c4cf6dcf835931
