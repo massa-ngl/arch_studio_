@@ -1,0 +1,43 @@
+/* CUSTOM FONT FAMILY == SPACE-GROTESK */
+@font-face {
+    font-family: "font";
+    src: url("/starter-code/assets/fonts/space-grotesk-font/SpaceGrotesk-VariableFont_wght.ttf");
+  }
+  
+  /* @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap'); */
+  
+  /* EVERYTHING */
+  * {
+    font-family: "font";
+    max-width: 1440px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* line-height: 1.2; */
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+  }
+  
+  /* HTML DOC */
+  html {
+    overflow-x: hidden;
+  }
+  
+  /* BODY TAG */
+  body {
+    background-color: #fff;
+    height: 100vh;
+  }
+  
+  /* REUSABLES */
+  /* VARIABLES */
+  :root {
+    --very-dark-blue: #1b1d23;
+    --dark-grey: #60636d;
+    --medium-grey: #7d828f;
+    --light-grey: #c8ccd8;
+    --very-light-grey: #eeeff4;
+    --red-errors: #df5656;
+  }
+  

@@ -93,7 +93,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 112px;
+  gap: 156px;
 }
 
 .line {
@@ -151,6 +151,56 @@ button:hover {
   width: 20px;
   display: none;
 }
+
+/* FOOTER */
+.footer_sec {
+  display: flex;
+  /* gap: 40px; */
+  align-items: center;
+  position: relative;
+}
+
+.logo_f {
+  background-color: var(--very-dark-blue);
+  flex-basis: 200px;
+  padding: 50px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_f img {
+  width: 85px;
+}
+
+.footer_links {
+  display: flex;
+  gap: 40px;
+  background-color: var(--light-grey);
+  padding: 56px 60px;
+  flex: 1;
+  justify-content: flex-start;
+  margin-right: 150px;
+  /* margin-left: 10px; */
+}
+
+.footer_links a {
+  color: var(--medium-grey);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.proj_btn2 {
+  position: absolute;
+  right: -1px;
+}
+
+
+
+
+
 
 /* PROJECT CONTENTS */
 .project_section {
