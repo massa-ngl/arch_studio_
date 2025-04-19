@@ -362,3 +362,11 @@ h1.name {
   position: absolute;
   right: -1px;
 }
+
+.proj_btn2 p{
+  color: var(--very-light-grey);
+}
+
+.proj_btn2 p:hover{
+  color: var(--light-grey);
+}
